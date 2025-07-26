@@ -1,68 +1,95 @@
-# CarRentalSystem
-Car Rental Management System – Java (OOP & MySQL)
-Overview
-The Car Rental Management System is a console-based application developed in Java using Object-Oriented Programming (OOP) principles. It streamlines the operations of a car rental business by providing functionalities for administrators and users. The system is connected to a MySQL database through MySQL Connector/J, enabling real-time data management for cars, customers, and rental transactions.
+Car Rental Management System (Java + MySQL)
+📝 Overview
+The Car Rental Management System is a console-based application developed in Java using Object-Oriented Programming (OOP) principles. It connects to a MySQL database using MySQL Connector/J (JDBC) to manage real-time data operations for cars, users, and rental records. This system provides separate roles for Admin and User, enabling complete rental workflow and data management via a simple interface.
 
-Key Features
-
-🔑 User Roles
-
-Admin: Can add/update/delete cars, view all cars, manage user data, and track rental history.
-
-User: Can register/login, view available cars, rent cars, return vehicles, and view personal rental history.
-
-🚗 Car Management
-
-Add new car entries with brand, model, number plate, rent price, and availability status.
-
-Update or delete car information dynamically from the database.
-
-🧾 Rental Operations
-
-Rent and return cars using real-time database updates.
-
-Automatically marks cars as available/unavailable based on rental status.
-
-👤 User Management
-
-User authentication with username and password.
-
-Allows admins to edit or delete user information.
-
-Users can change their password securely.
-
-📊 Data Storage & Retrieval
-
-Integrated with MySQL to store and retrieve data for users, cars, and rental records.
-
-Uses JDBC (MySQL Connector/J 9.3.0) to connect Java application with the database.
-
-Technologies Used
-
+🔧 Technologies Used
 Java – Core language with OOP principles
 
-MySQL – Backend database for persistent storage
+MySQL – Relational database for persistent data storage
 
-JDBC (MySQL Connector/J) – For database communication
+JDBC (MySQL Connector/J 9.3.0) – For Java–MySQL integration
 
-Scanner – For console-based input handling
+Scanner Class – For handling user inputs via the console
 
-NetBeans/IntelliJ IDEA – (Assumed) IDE for development and testing
+NetBeans / IntelliJ IDEA – IDEs used for development and testing
 
-Usage Instructions
+🔑 User Roles
+👤 Admin
+Add, update, and delete car records
 
-Start the MySQL server and create required tables (cars, users, rents).
+Manage user accounts and rental history
 
-Run the Java application in your IDE or terminal.
+View all available cars and rental data
 
-Login as admin or register as a new user.
+🙋 User
+Register and log in securely
 
-Interact with the system to manage cars, users, and rental operations.
+View available cars
 
-Future Enhancements
+Rent and return cars
 
-🖥️ GUI Integration: Add a graphical interface using JavaFX or Swing for better usability.
+View their own rental history
 
-🌐 Web-Based Version: Convert the system into a web app using Spring Boot and HTML/CSS.
+Change account password
 
-📈 Analytics Module: Add reports for top rented cars, customer activity, and rental trends.
+🚗 Car Management Features
+Add new car entries with:
+
+Brand
+
+Model
+
+Number plate
+
+Rent price
+
+Availability status
+
+Update or delete car records dynamically
+
+🧾 Rental Operations
+Rent a car: marks the car as unavailable
+
+Return a car: marks the car as available
+
+Records each transaction in the database in real-time
+
+👨‍💻 Database Integration
+MySQL database includes the following tables:
+
+users
+
+cars
+
+rents
+
+Uses MySQL Connector/J 9.3.0 for database communication
+
+All actions (registration, renting, updating cars) update the database in real-time
+
+📥 Setup & Usage
+📦 Prerequisites
+Java JDK installed
+
+MySQL Server running locally
+
+MySQL Connector/J 9.3.0 downloaded and added to your project
+
+🛠️ Setup Steps
+Start MySQL and create the required database with tables:
+users, cars, and rents
+
+Download MySQL Connector/J 9.3.0 from the official site or Maven repo.
+
+Connect JDBC in your project by importing the .jar file or configuring the dependency.
+
+Compile and run the project in your IDE (NetBeans or IntelliJ) or terminal.
+
+Interact with the system by logging in as an admin or registering as a user.
+
+📈 Future Enhancements
+🖥️ Graphical User Interface using JavaFX or Swing
+
+🌐 Web-Based Version using Spring Boot + HTML/CSS
+
+📊 Analytics Module for rental statistics, most rented cars, and user activity reports
