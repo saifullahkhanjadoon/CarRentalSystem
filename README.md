@@ -1,5 +1,4 @@
 
-  </style>
 </head>
 <body>
   <h1>🚗 Car Rental Management System (Java + MySQL)</h1>
@@ -94,16 +93,7 @@
     </ul>
   </div>
 
-  <div class="section">
-    <h2>📄 Sample Output (Console)</h2>
-    <pre>
-Welcome to the Car Rental Management System
-1. Register
-2. Login as User
-3. Login as Admin
-4. Quit
-    </pre>
-  </div>
+
 
   <div class="section">
     <h2>📚 License</h2>
