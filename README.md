@@ -1,30 +1,4 @@
 
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      margin: 0;
-      padding: 2rem;
-      line-height: 1.6;
-    }
-    h1, h2 {
-      color: #2c3e50;
-    }
-    ul {
-      margin-top: 0;
-    }
-    .section {
-      margin-bottom: 2rem;
-    }
-    .highlight {
-      font-weight: bold;
-      color: #2980b9;
-    }
-    code {
-      background-color: #eee;
-      padding: 2px 4px;
-      border-radius: 4px;
-      font-size: 90%;
-    }
   </style>
 </head>
 <body>
