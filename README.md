@@ -1,17 +1,17 @@
-Car Rental Management System (Java + MySQL)
+🚗 Car Rental Management System (Java + MySQL)
 📝 Overview
-The Car Rental Management System is a console-based Java application designed using Object-Oriented Programming (OOP) principles. It interacts with a MySQL database using JDBC (MySQL Connector/J 9.3.0) to manage real-time operations related to car rentals, users, and admin tasks.
+The Car Rental Management System is a console-based Java application developed using Object-Oriented Programming (OOP) principles. It connects to a MySQL database using JDBC (MySQL Connector/J 9.3.0) to handle real-time car rental operations, including managing users, rentals, and the car inventory.
 
-The system provides separate roles for Admin and User, enabling full rental workflows, user account management, and car inventory tracking — all via a simple text-based interface.
+The system supports two main roles — Admin and User — each with tailored functionalities to ensure smooth rental workflows and secure account management.
 
 🔧 Technologies Used
-Java – Core programming language (OOP)
+Java – Core programming language (OOP-based)
 
 MySQL – Relational database for persistent storage
 
 JDBC (MySQL Connector/J 9.3.0) – Java-MySQL integration
 
-Scanner Class – For handling console input
+Scanner Class – Console input handling
 
 NetBeans / IntelliJ IDEA – IDEs used for development
 
@@ -19,16 +19,20 @@ NetBeans / IntelliJ IDEA – IDEs used for development
 👤 Admin
 Add, update, and delete car records
 
-Manage user accounts and view rental history
+Manage user accounts
 
-View all available cars and current rental records
+View all rental history and currently rented cars
+
+View available car inventory
 
 🙋 User
-Register and log in securely
+Register and log in
 
 View available cars
 
-Rent and return cars
+Rent a car (marks as unavailable)
+
+Return a car (marks as available)
 
 View personal rental history
 
@@ -52,14 +56,22 @@ Update or delete existing car entries
 Real-time status updates (Available/Unavailable)
 
 🧾 Rental Operations
-Rent a car: Marks the car as unavailable
+Rent a Car
 
-Return a car: Marks the car as available
+Car status becomes "Unavailable"
 
-Each transaction is recorded in the database instantly
+Rental record created in database
 
-👨‍💻 Database Integration
-MySQL database includes the following tables:
+Return a Car
+
+Car status becomes "Available"
+
+Return time is recorded
+
+All operations are recorded in the database in real time
+
+👨‍💻 Database Structure
+The MySQL database includes the following tables:
 
 users
 
@@ -67,38 +79,52 @@ cars
 
 rents
 
-The system uses MySQL Connector/J 9.3.0 for real-time communication between Java and the database.
-
-All major actions (registration, car rental, returns, updates) reflect instantly in the database.
+Real-time communication is handled using MySQL Connector/J (version 9.3.0). All major actions reflect instantly in the database.
 
 📥 Setup & Usage
 📦 Prerequisites
-Java JDK (8 or higher)
+Java JDK (8 or above)
 
-MySQL Server installed and running locally
+MySQL Server (Installed & Running)
 
-MySQL Connector/J 9.3.0 .jar file
+MySQL Connector/J 9.3.0 (.jar file)
 
 🛠️ Setup Steps
-Create the database and required tables (users, cars, rents) in MySQL.
+Create a MySQL database and the following tables: users, cars, rents
 
-Download MySQL Connector/J 9.3.0 from the official website.
+Add MySQL Connector/J 9.3.0 to your project’s classpath
 
-Add the .jar to your project’s classpath (in NetBeans or IntelliJ).
+Open the project in NetBeans or IntelliJ IDEA
 
-Compile and run the project.
+Compile and run the application
 
-Use the console to log in as Admin or register as a new User.
+Use the console to:
+
+Register or log in as a User
+
+Log in as Admin for car and user management
 
 📈 Future Enhancements
-🖥️ Graphical User Interface (GUI) using JavaFX or Swing
+🖥️ GUI Integration using JavaFX or Swing
 
-🌐 Web-based version using Spring Boot + HTML/CSS
+🌐 Web-Based Version using Spring Boot + HTML/CSS
 
-📊 Analytics module to track:
+📊 Analytics Module to track:
 
-Most rented cars
+Most Rented Cars
 
-Active users
+Active Users
 
-Revenue statistics
+Revenue Statistics
+
+📌 Sample Output (Console)
+pgsql
+Copy
+Edit
+Welcome to the Car Rental Management System
+1. Register
+2. Login as User
+3. Login as Admin
+4. Quit
+📚 License
+This project is for educational purposes. Feel free to fork and modify it.
